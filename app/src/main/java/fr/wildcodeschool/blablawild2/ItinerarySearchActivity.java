@@ -49,7 +49,7 @@ public class ItinerarySearchActivity extends AppCompatActivity {
                     tripsRef.child(key).addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override
                         public void onDataChange(DataSnapshot dataSnapshot) {
-                            Intent intent = new Intent(ItinerarySearchActivity.this, MainActivity.class);
+                            Intent intent = new Intent(ItinerarySearchActivity.this, ItineraryListActivity.class);
                             startActivity(intent);
                         }
 
